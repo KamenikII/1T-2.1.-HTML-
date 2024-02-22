@@ -4,8 +4,67 @@
     box-sizing: border-box;
 }
 
+/* general */
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
     background-color: #fff;
+}
+
+.content,
+.chapter,
+.formContact,
+.contacts,
+.rights,
+.avatar {
+    /* Временное решение, так приятно глазу) */
+    padding-left: 8px;
+}
+
+/* head */
+.author,
+.footerContact {
+    background-color: rgb(63, 49, 63);
+    color: #fff;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+
+/* main */
+
+
+
+/* footer */
+.formContact {
+    background-color: rgb(229, 214, 210);
+    color: black;
+}
+
+.formStyle {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(63, 49, 63);
+    width: 30%;
+}
+
+.textareaStyle {
+    width: 60%;
+    resize: none;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.formBtn {
+    background-color: rgb(63, 49, 63);
+    color: #fff;
+    width: 15%;
+    height: 40px;
+}
+
+.rights {
+    color: rgb(163, 163, 163);
 }
