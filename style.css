@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 /* general */
+body {
+    font-family: Arial, sans-serif;
+}
 
 .container {
     max-width: 1170px;
@@ -22,40 +26,102 @@
     padding-left: 8px;
 }
 
-/* head */
+.chapter {
+    padding-top: 16px;
+}
+
 .author,
-.footerContact {
+.footerContainer {
     background-color: rgb(63, 49, 63);
     color: #fff;
 }
 
+/* head */
+.author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .avatar {
     border-radius: 50%;
+    max-height: 264px;
+    max-width: 264px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding-left: 8px;
 }
 
 
 /* main */
+.job {
+    display: flex;
+}
+
+.dates {
+    flex-basis: 120px;
+    text-align: center;
+}
+
+.aboutJob {
+    flex-grow: 1;
+    flex-basis: 240px;
+    padding-left: 8px;
+}
 
 
+
+.langList {
+    list-style-type: square;
+    padding-left: 24px;
+}
+
+.langListItem::marker {
+    color: rgb(229, 214, 210);
+}
 
 /* footer */
-.formContact {
+.formContainer {
     background-color: rgb(229, 214, 210);
     color: black;
+    text-align: center;
+    display: flexbox;
+    padding: 8px;
+    padding-bottom: 16px;
+}
+
+.formInput {
+    display: flexbox;
+}
+
+.nameAndEmail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 2;
 }
 
 .formStyle {
     border: none;
     background: transparent;
     border-bottom: 2px solid rgb(63, 49, 63);
-    width: 30%;
+    padding-bottom: 8px;
 }
 
-.textareaStyle {
-    width: 60%;
+.formTextarea {
     resize: none;
     font-size: 1rem;
     overflow: hidden;
+    width: 27%;
 }
 
 .formBtn {
@@ -67,4 +133,34 @@
 
 .rights {
     color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.contactsContainer {
+    text-align: center;
+    display: flexbox;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.linkContact {
+    outline: none;
+    text-decoration: none;
+}
+
+.linkContact:link {
+    color: #fff;
+}
+
+.linkContact:focus,
+.linkContact:hover {
+    border-bottom: 1px solid;
+}
+
+.linkContact:visited {
+    color: #fff;
 }
